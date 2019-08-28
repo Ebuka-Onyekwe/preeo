@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+<ion-col>
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Number of Underaged Participants</ion-card-subtitle>
+          <ion-card-title>BMW Survey</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <canvas id="myChart" width="50" height="50"></canvas>
+        </ion-card-content>
+      </ion-card>
+ 
+</ion-col>
+
+<ion-col>
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Number of Unlicenced Participants</ion-card-subtitle>
+          <ion-card-title>BMW Survey</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+  <canvas id="unlicencedChart" width="50" height="50"></canvas>
+  </ion-card-content>
+    </ion-card>
+</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+        <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Number of FirstTimer Participants</ion-card-subtitle>
+              <ion-card-title>BMW Survey</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+      <canvas id="firstTimeChart" width="50" height="50"></canvas>
+            </ion-card-content>
+        </ion-card>       
+    </ion-col>
+
+    <ion-col>
+        <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Number of Target Participants</ion-card-subtitle>
+              <ion-card-title>BMW Survey</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+      <canvas id="targetChart" width="50" height="50"></canvas>
+    </ion-card-content>
+  </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+        <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Number of drifting Participants</ion-card-subtitle>
+              <ion-card-title>BMW Survey</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+      <canvas id="driftingChart" width="50" height="50"></canvas>
+    </ion-card-content>
+  </ion-card>
+    </ion-col>
+
+    <ion-col>
+        <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Number of drivetrain Participants</ion-card-subtitle>
+              <ion-card-title>BMW Survey</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+      <canvas id="driveTrainChart" width="50" height="50"></canvas>
+    </ion-card-content>
+  </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <h3>
+          The average amount of BMWs owned by targetables: {{average}}
+      </h3>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card>
+
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
